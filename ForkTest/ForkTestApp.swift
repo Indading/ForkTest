@@ -5,6 +5,7 @@
 //  Created by KyoungJin Baek on 1/17/25.
 //
 
+import SwiftData
 import SwiftUI
 
 @main
@@ -13,5 +14,6 @@ struct ForkTestApp: App {
         WindowGroup {
             ContentView()
         }
+        .modelContainer(for: Todo.self)
     }
 }
